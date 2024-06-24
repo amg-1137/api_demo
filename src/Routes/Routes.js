@@ -3,11 +3,7 @@ import {TODO} from '../Views/TODO/TODO';
 
 const MyURLs = [
     {
-        path: "todo",
-        view: TODO
-    },
-    {
-        path: "todo",
+        path: "/",
         view: TODO
     }
 ]

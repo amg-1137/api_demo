@@ -25,6 +25,9 @@ export default function Layout(props) {
     return (
         <>
             <nav className={Styles.header}>
+                <span>
+                    My TODO App
+                </span>
                 <ul className={Styles.headerLinks}>
                     {MyURLs.map((view, index) => (
                         <li key={view.path}>
@@ -35,7 +38,9 @@ export default function Layout(props) {
                     ))}
                 </ul>
             </nav>
-            <Outlet />
+            <div className={Styles.primaryContainer}>
+                <Outlet />
+            </div>
         </>
     )
 }
