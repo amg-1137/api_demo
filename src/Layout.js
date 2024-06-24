@@ -32,7 +32,7 @@ export default function Layout(props) {
                     {MyURLs.map((view, index) => (
                         <li key={view.path}>
                             <Link to={view.path}>
-                                {view.path.toUpperCase()}
+                                {view.title.toUpperCase()}
                             </Link>
                         </li>
                     ))}
