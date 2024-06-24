@@ -8,12 +8,12 @@ export function TODO(props) {
     const [todoData, setTodoData] = useState(dummy);
 
     useEffect(() => {
-        // const apiData = getTodos()
+        const apiData = getTodo()
         // setTodoData(apiData)
         setTodoData(dummy);
     }, [])
 
-    const getTodos = () => {
+    const getTodo = () => {
         // get todos and update in todoData
     }
 
